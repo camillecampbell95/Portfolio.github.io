@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Work Experience • Camille Campbell</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner container">
+      <div class="brand">
+        <div class="brand-badge">CC</div>
+        <div>Camille Campbell</div>
+      </div>
+      <nav>
+        <a href="index.html">About</a>
+        <a href="work.html">Work</a>
+        <a href="education.html">Education</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="avatar-wrap">
+        <img data-avatar class="avatar" alt="Profile photo"/>
+      </div>
+      <div>
+        <div class="kicker">Experience</div>
+        <h1 class="h1">Selected Roles & Impact</h1>
+        <p class="lead">Highlights of how I’ve applied data visualization to drive outcomes.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="grid cards">
+        <div class="card">
+          <h3>Power BI Developer — Company A</h3>
+          <p><strong>Impact:</strong> Built KPI suite used in weekly ops; reduced manual reporting by 80%.</p>
+          <ul>
+            <li>Modeled star schema; introduced calculation groups for time intelligence</li>
+            <li>Published dashboards with RLS for secure, cross-dept access</li>
+            <li>Optimized DAX, cutting visual load by ~40%</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>BI Analyst — Company B</h3>
+          <p><strong>Impact:</strong> Automated SSRS subscriptions (400+ reports) and standardized templates.</p>
+          <ul>
+            <li>SQL stored procedures for reliable datasets</li>
+            <li>Version control via Azure DevOps</li>
+            <li>Dashboard theming for visual consistency</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Data Viz Projects</h3>
+          <p>Public, de-identified dashboards & case studies (coming to the site).</p>
+          <ul>
+            <li>Hiring pipeline analytics & time-to-fill</li>
+            <li>Marketing A/B uplift & cohort views</li>
+            <li>Operational KPIs with drill-through</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">© <span id="y"></span> Camille Campbell</footer>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+  <script src="script.js"></script>
+</body>
+</html>

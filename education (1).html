@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Education • Camille Campbell</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner container">
+      <div class="brand">
+        <div class="brand-badge">CC</div>
+        <div>Camille Campbell</div>
+      </div>
+      <nav>
+        <a href="index.html">About</a>
+        <a href="work.html">Work</a>
+        <a href="education.html">Education</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="avatar-wrap">
+        <img data-avatar class="avatar" alt="Profile photo"/>
+      </div>
+      <div>
+        <div class="kicker">Education</div>
+        <h1 class="h1">Degrees, Certifications & Continuous Learning</h1>
+        <p class="lead">Formal training and credentials that support my BI practice.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="grid cards">
+        <div class="card">
+          <h3>B.S. / M.S. (Example)</h3>
+          <p>University Name — Focus on Analytics, Statistics, or Information Systems.</p>
+          <p><strong>Relevant work:</strong> Data modeling, visualization, and ETL.</p>
+        </div>
+        <div class="card">
+          <h3>Certification — PL-300</h3>
+          <p>Microsoft Power BI Data Analyst</p>
+          <p><strong>Focus:</strong> Data prep, modeling, DAX, and visualization best practices.</p>
+        </div>
+        <div class="card">
+          <h3>Courses & Workshops</h3>
+          <p>Advanced DAX, SQL performance tuning, SSRS templating, accessibility in dataviz.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">© <span id="y"></span> Camille Campbell</footer>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+  <script src="script.js"></script>
+</body>
+</html>

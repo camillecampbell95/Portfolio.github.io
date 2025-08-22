@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Camille Campbell • Portfolio</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23990000'/><text x='50' y='58' text-anchor='middle' font-size='58' fill='white' font-family='Arial' font-weight='800'>CC</text></svg>">
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner container">
+      <div class="brand">
+        <div class="brand-badge">CC</div>
+        <div>Camille Campbell</div>
+      </div>
+      <nav>
+        <a href="index.html">About</a>
+        <a href="work.html">Work</a>
+        <a href="education.html">Education</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="avatar-wrap">
+        <img data-avatar class="avatar" alt="Profile photo"/>
+        <input id="avatarInput" type="file" accept="image/*" hidden>
+        <button class="upload" onclick="document.getElementById('avatarInput').click()">Upload</button>
+      </div>
+      <div>
+        <div class="kicker">Data Visualization • BI • Storytelling</div>
+        <h1 class="h1">Hi, I’m Camille — I turn complex data into clear, decision-ready visuals.</h1>
+        <p class="lead">
+          Power BI and SQL are my home base. I design performant data models, write robust DAX,
+          and build dashboards that leaders actually use. This site showcases my work, experience,
+          and journey.
+        </p>
+        <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap;">
+          <span class="badge">Power BI</span>
+          <span class="badge">SQL</span>
+          <span class="badge">DAX</span>
+          <span class="badge">SSRS</span>
+          <span class="badge">Python</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>About Me</h2>
+      <div class="grid">
+        <p>
+          I specialize in translating stakeholder questions into analytical visuals. My process:
+          understand context → model the data → craft visuals with intent → iterate quickly with feedback.
+        </p>
+        <div class="grid cards">
+          <div class="card">
+            <h3>What I deliver</h3>
+            <p>Interactive dashboards, KPI suites, automated reporting, and reusable DAX/SQL patterns.</p>
+          </div>
+          <div class="card">
+            <h3>How I work</h3>
+            <p>Design systems, consistent theming, accessibility, and performance-first modeling.</p>
+          </div>
+          <div class="card">
+            <h3>Tooling</h3>
+            <p>Power BI, SQL Server, DAX, SSRS, Azure DevOps, Python (ETL), Looker.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">© <span id="y"></span> Camille Campbell — Built with ❤️ in IU colors</footer>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+  <script src="script.js"></script>
+</body>
+</html>
